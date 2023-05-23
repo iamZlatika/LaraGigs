@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Ururu;
 use App\Models\Listing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -55,4 +56,10 @@ Route::get('/search', function (Request $request) {
     return $request->name . ' ' . $request->city;
 });
 
+Route::get('/ururu', function () {
+        return view('ururu', [
+        'heading' => "question",
+        'ururu' => Ururu::all()
+    ]);
+});
 // Route::get('/user', [UserController::class, 'index']);

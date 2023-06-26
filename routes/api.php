@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Ururu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 // http://127.0.0.1:8000/api/posts
 
-Route::get('/posts', function () {
-    return response()->json([
-        'posts' => [
-            'title' => 'Post One'
-        ]
-    ]);
-});
+// Route::get('/posts', function () {
+//     return response()->json([
+//         'posts' => [
+//             'title' => 'Post One'
+//         ]
+//     ]);
+// });
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

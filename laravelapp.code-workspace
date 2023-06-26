@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/laragigs-main/_laragigs_theme"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "_laragigs_theme"
+	}
+}
